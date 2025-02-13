@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .app {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  /* Task Form */
+  .task-form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .task-form input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .task-form button {
+    padding: 10px;
+    width: 50%;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .task-form button[type="submit"] {
+    background: #007bff;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background: gray;
+    color: white;
+  }
+  
+  /* Task List */
+  .task-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .task-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-card.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+  }
+  
+  .task-actions button {
+    padding: 8px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .task-actions button:first-child {
+    background: #ffc107;
+    color: black;
+  }
+  
+  .delete-btn {
+    background: red;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .app {
+      max-width: 90%;
+    }
+  
+    .task-form input {
+      width: 100%;
+    }
+  
+    .task-form button {
+      width: 100%;
+    }
+  }
+  
